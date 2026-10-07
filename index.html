@@ -434,6 +434,16 @@
 
 
 
-
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.sales-button-cta').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      fbq('track', 'AddToCart', {value: 47.00, currency: 'BRL'});
+    });
+  });
+});
+</script>
+</body>
+</html>
 </body>
 </html>
